@@ -13,9 +13,6 @@ class User
   end
 
   def user_data
-    @name
-    @city
-    @phone
     puts "name = #{@name},\ncity = #{@city},\nphone = #{@phone}"
   end
 end
