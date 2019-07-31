@@ -8,7 +8,7 @@ class Vehicle
     @wheel_count = 2
   end
   def wheel_count
-    "wheel count is #{@wheel_count}"
+    @wheel_count
   end
   def wheel_count=(value)
     @wheel_count = value
@@ -17,7 +17,7 @@ end
 
 class Bike < Vehicle
   def show
-    "Bike have #{@wheel_count} wheels"
+    @wheel_count
   end
 end
 
@@ -26,7 +26,7 @@ class Auto < Vehicle
     @wheel_count = 3
   end
   def show
-    "Auto have #{@wheel_count} wheels"
+    @wheel_count
   end
 end
 
@@ -35,7 +35,7 @@ class Bus < Vehicle
     @wheel_count = 4
   end
   def show
-    "Bus have #{@wheel_count} wheels"
+    @wheel_count
   end
 end
 
