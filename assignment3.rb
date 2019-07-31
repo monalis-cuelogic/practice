@@ -11,22 +11,22 @@ class Calculator
    end
    def add
      c = @a + @b
-     puts "addition of #{@a} and #{@b} is #{c}","\n"
+     "addition of #{@a} and #{@b} is #{c}"
    end
    def sub
      c = @a - @b
-     puts "substraction of #{@a} and #{@b} is #{c}","\n"
+     "substraction of #{@a} and #{@b} is #{c}"
    end
    def mul
-     c = @a / @b
-     puts "multiplication of #{@a} and #{@b} is #{c}","\n"
+     c = @a * @b
+     "multiplication of #{@a} and #{@b} is #{c}"
    end
    def division
      begin
        c = @a / @b
-       puts "division of #{@a} and #{@b} is #{c}","\n"
+       "division of #{@a} and #{@b} is #{c}"
      rescue ZeroDivisionError => e
-      puts "#{e.class}: #{e.message}"
+      "#{e.class}: #{e.message}"
      end
    end
   end
@@ -37,11 +37,11 @@ class Argument
   end
    def check_number
      if @argument > 0
-       puts "positive"
+       "positive"
      elsif @argument < 0
-       puts "negative"
+       "negative"
      elsif @argument == nil
-      puts nil
+      nil
      end
    end
 end
@@ -57,4 +57,4 @@ cal1.division
 cal2.division
 
 arg1 = Argument.new 0
-puts arg1.check_number
+arg1.check_number
