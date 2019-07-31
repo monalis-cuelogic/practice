@@ -7,6 +7,9 @@ class Vehicle
   def initialize
     @wheel_count = 2
   end
+  def wheel_count
+    puts "wheel count is #{@wheel_count}"
+  end
 end
 
 class Bike < Vehicle
@@ -35,6 +38,7 @@ end
 
 bike = Bike.new
 bike.show
+bike.wheel_count
 
 auto = Auto.new
 auto.show
