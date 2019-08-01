@@ -35,17 +35,20 @@ class Argument
   def initialize argument
     @argument = argument
   end
-   def check_number
+  def check_number
+    begin
      if @argument > 0
        "positive"
      elsif @argument < 0
        "negative"
-     elsif @argument == nil
+     elsif @argument == 0
       nil
      end
-   end
+    rescue ArgumentError => ee
+      "Invalid Input"
+    end
+  end
 end
-
 
 cal1 = Calculator.new(2,2)
 cal2 = Calculator.new(12,0)
@@ -56,5 +59,6 @@ cal1.mul
 cal1.division
 cal2.division
 
-arg1 = Argument.new 0
-arg1.check_number
+arg1 = Argument.new "test"
+puts arg1.check_number
+
