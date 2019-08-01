@@ -59,6 +59,6 @@ cal1.mul
 cal1.division
 cal2.division
 
-arg1 = Argument.new "test"
-puts arg1.check_number
+arg1 = Argument.new "monali"
+arg1.check_number
 
