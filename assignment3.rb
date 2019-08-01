@@ -10,21 +10,17 @@ class Calculator
       @b = b
    end
    def add
-     c = @a + @b
-     "addition of #{@a} and #{@b} is #{c}"
+     @a + @b
    end
    def sub
-     c = @a - @b
-     "substraction of #{@a} and #{@b} is #{c}"
+     @a - @b
    end
    def mul
-     c = @a * @b
-     "multiplication of #{@a} and #{@b} is #{c}"
+    @a * @b
    end
    def division
      begin
-       c = @a / @b
-       "division of #{@a} and #{@b} is #{c}"
+      @a / @b
      rescue ZeroDivisionError => e
       "#{e.class}: #{e.message}"
      end
