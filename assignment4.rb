@@ -5,19 +5,58 @@
 
 class Fibonacci
  def fibo
-  puts "enter number"
-   number = gets.to_i
-   first = 0
-   second = 1
-    number.times do
-    third = first + second
-    puts third
-    first = second
-    second = third
+    puts "Enter Number"
+    number = gets.to_i
+    n1 = 0
+    n2 = 1
+    seq = []
+    seq.push(n1,n2)
+    n3 = n1 + n2
+
+    number.times do 
+    seq << n3
+    n1 = n2
+    n2 = n3
+    n3 = n2 + n1
+    end
+    number.times do |sequence|
+        puts seq[sequence]
     end
  end
 end
 
 ob = Fibonacci.new
 ob.fibo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
