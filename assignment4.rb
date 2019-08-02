@@ -13,50 +13,15 @@ class Fibonacci
     seq.push(n1,n2)
     n3 = n1 + n2
 
-    number.times do 
+    number.times do |sequence|
     seq << n3
     n1 = n2
     n2 = n3
     n3 = n2 + n1
-    end
-    number.times do |sequence|
-        puts seq[sequence]
+    puts seq[sequence]
     end
  end
 end
 
 ob = Fibonacci.new
 ob.fibo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
