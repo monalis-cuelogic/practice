@@ -19,9 +19,11 @@ class Fibonacci
     n2 = n3
     n3 = n2 + n1
     demo = seq[sequence]
-    print demo.to_s
+    # print demo.to_s
     end
- end
+    seq.pop(2)
+    print seq
+     end
 end
 
 ob = Fibonacci.new
