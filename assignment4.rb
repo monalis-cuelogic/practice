@@ -4,7 +4,7 @@
 # If user enters 7 then output should be 1,1,2,3,5,8,13
 
 class Fibonacci
- def fibo
+    def fibo
     puts "Enter Number"
     number = gets.to_i
     n1 = 0
@@ -12,18 +12,14 @@ class Fibonacci
     seq = []
     seq.push(n1,n2)
     n3 = n1 + n2
-
-    number.times do |sequence|
-    seq << n3
-    n1 = n2
-    n2 = n3
-    n3 = n2 + n1
-    demo = seq[sequence]
-    # print demo.to_s
+        (number-2).times do |sequence|
+        seq << n3
+        n1 = n2
+        n2 = n3
+        n3 = n2 + n1
+        end
+        print seq
     end
-    seq.pop(2)
-    print seq
-     end
 end
 
 ob = Fibonacci.new
